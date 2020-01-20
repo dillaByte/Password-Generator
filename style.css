@@ -22,7 +22,13 @@ body {
     justify-content: center;
 }
 
-.buttons {
+#buttons {
+    justify-content: space-evenly;
+
+}
+
+#button1 {
+    margin-right: 100px;
     font-size: large;
     background-color: red;
     color: white;
@@ -33,4 +39,25 @@ body {
     display: inline-block;
     justify-content: center;
     flex-direction: row;
+}
+
+#button2 {
+    margin-left: 100px;
+    font-size: large;
+    background-color: rgb(206, 186, 186);
+    color: white;
+    text-align: center;
+    height: 35px;
+    border-radius: 50px;
+    width: fit-content;
+    display: inline-block;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
 }

@@ -16,13 +16,33 @@
     </div>
     <div class="container">
         <h2>Generate a Password</h2>
-        <textarea readonly id="password" placeholder="Your Secure Password"
-            aria-label="Your Generated Password"></textarea>
-        <div class="buttons">
-            <button id="Generate password">Generate Password</button>
-            <button id="copy">Copy to clip board <i aria-hidden="true"></i></button>
+        <textarea readonly id="password" placeholder="Your Secure Password" aria-label="result"></textarea>
+        <div id=buttons>
+            <button id="button1">Generate Password</button>
+            <button id="button2">Copy to clip board <i aria-hidden="true"></i></button>
         </div>
-
+    </div>
+    <div class="settings">
+        <div class="setting">
+            <label>Password length</label>
+            <input type="number" id="length" min='8' max='28' value='28' />
+        </div>
+        <div class="setting">
+            <label>Include uppercase letters</label>
+            <input type="checkbox" id="uppercase" checked />
+        </div>
+        <div class="setting">
+            <label>Include lowercase letters</label>
+            <input type="checkbox" id="lowercase" checked />
+        </div>
+        <div class="setting">
+            <label>Include numbers</label>
+            <input type="checkbox" id="numbers" checked />
+        </div>
+        <div class="setting">
+            <label>Include symbols</label>
+            <input type="checkbox" id="symbols" checked />
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
