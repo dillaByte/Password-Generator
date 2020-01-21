@@ -1,14 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
 * {
     box-sizing: border-box;
 }
 
-.container {
-    background-color: white;
+input[type=checkbox] {
+    margin-right: 0;
 }
 
-#password {
-    height: 200px;
-    width: 700px;
+.container {
+    background-color: white
+}
+
+.result-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 12px 10px;
+    height: 50px;
+    width: 100%;
+}
+
+.result-container #result {
+    word-wrap: break-word;
+    max-width: calc(100% - 40px);
+}
+
 }
 
 body {
@@ -22,12 +44,26 @@ body {
     justify-content: center;
 }
 
-#buttons {
-    justify-content: space-evenly;
-
+h2 {
+    margin: 10px 0 20px;
+    text-align: center;
 }
 
-#button1 {
+.btn {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 12px;
+    background-color: #3B3B98;
+}
+
+.btn-large {
+    display: block;
+    width: 100%;
+}
+
+#generate {
     margin-right: 100px;
     font-size: large;
     background-color: red;
@@ -41,7 +77,7 @@ body {
     flex-direction: row;
 }
 
-#button2 {
+#clipboard {
     margin-left: 100px;
     font-size: large;
     background-color: rgb(206, 186, 186);
@@ -60,4 +96,10 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 15px 0;
+}
+
+@media screen and (max-width: 400px) {
+    .result-container {
+        font-size: 14px;
+    }
 }
